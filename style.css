@@ -1,0 +1,263 @@
+:root {
+    --primary-color: #22C55E;
+    --secondary-color: #1DA64D;
+    --text-color1: #0D0D0D;
+    --text-color2: #fff;
+    --background-color: #ffffff;
+    --header-color: #0D0D0D;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.image-- {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    outline: none;
+}
+
+header {
+    background-color: var(--header-color);
+    text-align: center;
+    padding: 30px 0 0 0;
+    height: 30vh;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    border-bottom: 2px solid #fff;
+    z-index: 1000;
+    margin: 0;
+}
+
+.header-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 0px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    padding: 20px;
+    color: var(--text-color2);
+    transition: background 0.3s ease-in;
+}
+
+.header-nav a:hover {
+    color: var(--primary-color);
+}
+
+.header-nav a:focus {
+    color: var(--secondary-color);
+}
+
+section {
+    margin-top: 300px;
+}
+
+.card {
+    display: flex;
+    padding: 0;
+    margin: 5%;
+}
+
+.card-text {
+    flex-basis: 40%;
+    align-self: center;
+    padding: 0.2em;
+    text-align: center;
+    margin: 0.5em;
+    font-size: 1em;
+}
+
+.card-text h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
+.text-button {
+    border-style: none;
+    color: var(--text-color2);
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: var(--primary-color);
+    margin-top: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+
+.text-button:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.card-img1 {
+    height: 500px;
+    flex-basis: 60%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card-img {
+    flex-basis: 60%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cards-img img,
+.card-img1 img {
+    height: inherit;
+    object-fit: contain;
+}
+
+
+footer {
+    background-color: #0D0D0D;
+    color: #FFFFFF;
+    padding: 60px 20px 20px;
+}
+
+.footer-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1 1 220px;
+    min-width: 200px;
+    margin: 6%;
+}
+
+.footer-col h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 8px 0;
+}
+
+.footer-col ul li a {
+    color: #CCCCCC;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-col p {
+    font-size: 14px;
+    color: var(--text-color2);
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #0D0D0D;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 12px;
+    height: 12px;
+    background-color: #22C55E;
+    transform: rotate(45deg);
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.social-icons {
+    margin-top: 15px;
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.social-icons a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #22C55E;
+}
+
+.footer-bottom {
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+}
+
+@media screen and (max-width: 640px) {
+    .card-img1 {
+        height: 300px;
+    }
+
+    .card-text {
+        flex-basis: 40%;
+        align-self: center;
+        text-align: center;
+        margin: 0.5em;
+        font-size: 0.8em;
+    }
+    .text-button {
+        margin-top: 3px;
+        padding: 10px 15px;
+    }
+}
