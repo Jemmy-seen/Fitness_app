@@ -34,14 +34,17 @@ header {
 
 .header-nav li {
     list-style: none;
-    display: inline-block;
+    display: inline;
     margin-top: 0px;
+    margin-left: ;
 }
 
 .header-nav a {
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
     color: var(--text-color2);
+    margin-left: 0;
+    margin-right: 20px;
     transition: background 0.3s ease-in;
 }
 
@@ -256,8 +259,30 @@ footer {
         margin: 0.5em;
         font-size: 0.8em;
     }
+
     .text-button {
         margin-top: 3px;
         padding: 10px 15px;
+    }
+
+    .image-- {
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        outline: none;
+        height: 12vh;
+    }
+
+    header {
+        height: 20vh;
+        width: 100%;
+        top: 0;
+        position: fixed;
+        border-bottom: 2px solid #fff;
+        z-index: 1000;
+        margin: 0;
+    }
+
+    section {
+        margin-top: 210px;
     }
 }
