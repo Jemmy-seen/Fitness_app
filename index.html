@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Life fitness</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -15,9 +15,9 @@
         <div>
             <nav class="header-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a id="home" href="#">Home</a></li>
                     <li><a href="#subscribe">Subscribe</a></li>
-                    <li><a href="#">Products</a></li>
+                    <li><a href="#products">Products</a></li>
                     <li><a href="#">More</a></li>
                 </ul>
             </nav>
@@ -28,7 +28,7 @@
         <div class="card">
             <div class="card-img"><img src="images/3.jpg" alt="not available" style="max-width: 100%;"></div>
             <div class="card-text">
-                <h3>Get fit. Stay healthy.</h3>
+                <h4>Get fit. Stay healthy.</h4>
                 <p>
                     Track your workouts, get better results, and the best
                     version of yourself.
@@ -38,7 +38,7 @@
         </div>
         <div class="card">
             <div class="card-text">
-                <h3>Track Ypur Progress</h3>
+                <h4>Track Your Progress</h4>
                 <p>
                     view detailed analytics of your workouts. Set your goals
                     ,log your workouts, and track your progress with our easy-to-use app.
@@ -51,7 +51,7 @@
         <div class="card">
             <div class="card-img"><img src="images/4.jpg" alt="not available" style="max-width: 100%;"></div>
             <div class="card-text">
-                <h3>Workout Videos</h3>
+                <h4>Workout Videos</h4>
                 <p>
                     checkout some of our prep videos
                     <br><button class="text-button">Watch now</button>
@@ -59,9 +59,9 @@
             </div>
         </div>
 
-        <div class="card">
+        <div class="card" id="products">
             <div class="card-text">
-                <h3>Products</h3>
+                <h4>Products</h4>
                 <p>
                     check out our gym products
                     <br><button class="text-button">check out!</button>
@@ -73,7 +73,7 @@
         <div class="card">
             <div class="card-img"><img src="images/6.webp" alt="not available" style="max-width: 100%;"></div>
             <div class="card-text">
-                <h3>Stay Motivated</h3>
+                <h4>Stay Motivated</h4>
                 <p>
                     Get inspired by our community, share your achievements,
                     Be a part of the fitness commuity today.
@@ -95,10 +95,11 @@
                 <p>Your partner in reaching health, strength, and transformation goals. Track workouts, connect with
                     others, and grow stronger every day.</p>
                 <div class="social-icons">
-                    <a href="#">Instagram</a>
-                    <a href="#">Thread</a>
-                    <a href="#">Twitter(X)</a>
-                    <a href="#">Facebook</a>
+                    <a href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i id="pinterest" class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i id="twitter" class="fab fa-twitter"></i></a>
+                    <a href="#"><i id="instagram" class="fab fa-instagram"></i></a>
+                    <a href="#"><i id="youtube" class="fab fa-youtube"></i></a>
                 </div>
             </div>
 
@@ -118,8 +119,11 @@
             <div id="subscribe" class="footer-col">
                 <h4>Join Our Newsletter</h4>
                 <p>Stay motivated. Get updates, tips, and exclusive fitness content in your inbox.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Enter your email" />
+                <form action="https://formsubmit.co/dominionoluwajemisin@gmail.com" method="POST" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <input type="hidden" name="_subject" value="New Newsletter Subscription!">
+                    <input type="hidden" name="_autoresponse" value="Thank you for subscribing to our Newsletter!">
+                    <input type="hidden" name="_template" value="table">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
